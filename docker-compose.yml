@@ -238,6 +238,12 @@ services:
       - appflowy_net
     depends_on:
       - appflowy_cloud
+
+networks:
+  appflowy_net: {}
+  shared-litellm:
+    external: true
+    
 volumes:
   postgres_data:
   minio_data:
