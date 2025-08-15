@@ -192,6 +192,7 @@ services:
       - APPFLOWY_AI_SERVER_PORT=${AI_SERVER_PORT}
       - APPFLOWY_AI_DATABASE_URL=${AI_DATABASE_URL}
       - APPFLOWY_AI_REDIS_URL=${AI_REDIS_URL}
+      - AI_OPENAI_API_BASE=${AI_OPENAI_API_BASE}
     depends_on:
       postgres:
         condition: service_healthy
